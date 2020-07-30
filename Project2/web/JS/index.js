@@ -17,7 +17,6 @@ $(function () {
 });
 $(".item img").on("click", function (event) {
     let imageID = $(event.target).attr("imageid");
-    console.log(imageID)
     $(location).attr("href", contentPath + "/DetailServlet?imageID=" + imageID)
 });
 

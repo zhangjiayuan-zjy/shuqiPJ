@@ -21,8 +21,6 @@ let flag = "init";
 let imgResult = $(".result .imgResult");
 
 function getImages() {
-    //let title = $("#titleInput").val();
-    //let content= $("#contentInput").val();
     let order = $("input:radio[name='filter2']:checked").val();
     let value = $("#inputs").val();
     $.post(contentPath + "/Search", {
@@ -31,7 +29,6 @@ function getImages() {
         order: order,
         page: (page - 1)
     }, function (data) {
-        console.log(data.length);
         totalPage = Math.ceil(data[0] / pageSize);
         if (data.length === 1) {
             imgResult.empty();
@@ -39,7 +36,7 @@ function getImages() {
             $(".result .helptips").text("No result, please search again");
         } else {
             out(data);
-            outLink(totalPage)
+            outLink(totalPage);
         }
     })
 }
@@ -47,10 +44,8 @@ function getImages() {
 function out(array) {
     imgResult.empty();
     for (let i = 1; i < array.length; i++) {
-        //if (i>(page-1)*pageSize&&i<page*pageSize){
         let div = $("<div class='detail'><div class='image'><a href='" + contentPath + "/DetailServlet?imageID=" + array[i]["imageID"] + "'><img src='" + contentPath + "/travel-images/small/" + array[i]["path"] + "' class='filterImg'></a></div><div class='dp'><h2>" + array[i]["title"] + "</h2><div class='imagedp'><p>" + array[i]["description"] + "</p></div></div></div>");
         imgResult.append(div);
-        //}
     }
 }
 
@@ -86,7 +81,6 @@ function outLink(length) {
 
 $(".link").on("click", function (event) {
     let index = parseInt(event.target.getAttribute("data-index"));
-    ;
     if (index == 0) {
         index = 1;
     } else if (index == (totalPage + 1)) {

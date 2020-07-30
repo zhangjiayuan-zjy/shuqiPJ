@@ -28,7 +28,6 @@ $("#select2").on("change", function () {
     replace2.innerHTML = value + "<i class='iconfont icon-shangxia'></i>";
     if (this.selectedIndex !== 0) {
         var data = getCityData(this);
-        console.log(data)
         if (data) {
             $("#select3").empty();
             let firstOption = $("<option>select city</option>");

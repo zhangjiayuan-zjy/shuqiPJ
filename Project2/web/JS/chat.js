@@ -1,5 +1,5 @@
 if ('WebSocket' in window) {
-    websocket = new WebSocket("ws://39.99.255.60:8080/Project2_war/websocket");
+    websocket = new WebSocket("ws://localhost:8080/Project2_war_exploded/websocket");
 } else {
     alert('Not support websocket');
 }
@@ -39,14 +39,11 @@ websocket.onmessage = function (event) {
                 let data = sessionStorage.getItem(json.fromName) + "<div class='right'><span class='rightMessage'>" + json.message + "</span><img src='" + contentPath + "/image/photo2.jpg'><p>" + json.fromName + "</p></div>";
                 sessionStorage.setItem(json.fromName, data);
             } else {
-                let data = "<div class='right'><div class='rightMessage'>" + json.message + "</div></div>";
+                let data = "<div class='right'><span class='rightMessage'>" + json.message + "</span><img src='" + contentPath + "/image/photo2.jpg'><p>" + json.fromName + "</p></div>";
                 sessionStorage.setItem(json.fromName, data);
             }
-
         }
-
     }
-    console.log(data);
 };
 
 function outFriend(json) {
