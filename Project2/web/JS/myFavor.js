@@ -10,14 +10,14 @@ function out(array) {
             console.log(array[i]);
             let div = $("<div class='detail'>" +
                 "<div class='image'>" +
-                "<a href='/DetailServlet?imageID='" + array[i]["imageID"] + "'>" +
+                "<a href='"+contentPath+"/DetailServlet?imageID='" + array[i]["imageID"] + "'>" +
                 "<img src='" + contentPath + "/travel-images/small/" + array[i]["path"] + "' class='filterImg'>" +
                 "</a>" +
                 "</div>" +
                 "<div class='dp'>" +
                 "<h2>" + array[i]["title"] + "</h2>" +
                 "<div class='imagedp'>" +
-                "<p>" + array[i]["description"] + "</p>" +
+                "<p>" + array[i]["des"] + "</p>" +
                 "</div><div class='input'>" +
                 "<input type='button' class='delete' value='delete' data-imageID='" + array[i]["imageID"] + "'>" +
                 "</div></div></div>");
