@@ -7,6 +7,7 @@ function out(array) {
     imgResult.empty();
     for (let i = 0; i < array.length; i++) {
         if (i >= (page - 1) * pageSize && i < page * pageSize) {
+            console.log(array[i]);
             let div = $("<div class='detail'>" +
                 "<div class='image'>" +
                 "<a href='/DetailServlet?imageID='" + array[i]["imageID"] + "'>" +

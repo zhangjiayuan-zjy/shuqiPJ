@@ -57,7 +57,7 @@
         <c:forEach items="${sessionScope.myPhoto}" var="image" begin="0" end="4">
             <div class='detail'>
                 <div class='image'>
-                    <a href="${pageContext.request.contextPath}/DetailServlet">
+                    <a href="${pageContext.request.contextPath}/DetailServlet?imageID=${image.imageID}">
                         <img src='${pageContext.request.contextPath}/travel-images/small/${image.path}'
                              class='filterImg'>
                     </a>
