@@ -1,0 +1,10 @@
+footer {
+    position: absolute;
+    font-size: 12px;
+    bottom: 5px;
+    color: #303952;
+}
+
+body {
+    position: relative;
+}

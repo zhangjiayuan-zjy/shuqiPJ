@@ -1,0 +1,148 @@
+#chatRoom{
+    margin:auto;
+    border-radius: 5px;
+}
+#headerContain{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+#header{
+    background-color: #353b48;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#container{
+    float: left;
+    width: 65%;
+    height: 600px;
+}
+#friendList{
+    box-sizing: border-box;
+    float: right;
+    width: 35%;
+    height: 600px;
+    background-color:white;
+    padding: 10px;
+    border-left: 1px solid #bdc3c7;
+    border-bottom-right-radius: 5px;
+}
+#showChat{
+    height: 350px;
+    background-color: white;
+    overflow-y: auto;
+}
+#input{
+    border-top: 1px solid #bdc3c7;
+    height: 230px;
+}
+
+#input{
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #bdc3c7;
+    border-bottom-left-radius: 5px;
+}
+#input textarea{
+    width: 95%;
+    height: 190px;
+    background-color:white ;
+    border: none;
+    outline: none;
+    color: #4b4b4b;
+    font-size: 1.2em;
+}
+#send{
+    color: white;
+    outline: none;
+    border: none;
+    border:1px solid #17c0eb;
+    background-color: #3498db;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+#header h1{
+    line-height: 2em;
+    font-size: 1.3em;
+    color: #f5f6fa;
+}
+#header h2{
+    line-height: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+    color: #f5f6fa;
+}
+#friendList h2{
+    line-height: 1.3em;
+    font-size: 1.2em;
+    color: #2f3640;
+    text-align: center;
+}
+#friendList a{
+    color: #2f3640;
+    font-size: 1.1em;
+}
+#friendList a:hover{
+    color: #e84118;
+}
+#friendList .selected{
+    color:#e84118 ;
+}
+#showChat .left{
+    text-align: left;
+    margin: 10px;
+}
+#showChat .right{
+    margin: 10px;
+    text-align: right;
+}
+#showChat .leftMessage{
+    display: inline-block;
+    background: #0181cc;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    max-width: 200px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#showChat .left img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+#showChat .rightMessage{
+    display: inline-block;
+    background: grey;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    max-width: 200px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-size: 1.2em;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#showChat .right img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -10px;
+}
+p{
+    margin: 15px 0;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,120 @@
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    width: 24%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.97%;
+}
+
+.main .inputs {
+    position: relative;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: linergraid 15s ease infinite;
+}
+
+@keyframes linergraid {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main .inputs input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 2.5% 0;
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 7.5%;
+    border-bottom: 1px solid white;
+}
+
+.main .inputs label {
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2.5% 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.main .inputs input:focus~label,
+.main .inputs input:valid~label {
+    top: -25%;
+    /*18px*/
+    left: 0;
+    color: cornflowerblue;
+    font-size: 1em;
+}
+
+.main h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 2.5%;
+    margin-bottom: 7.5%;
+}
+
+
+
+.register {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.register a {
+    color: royalblue;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#submit{
+    border: 1px lightblue;
+    padding: 5px 15px;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+.span{
+    width: 80%;
+    color: white;
+    height: 60px;
+}
+#imgContain{
+    position: relative;
+    text-align: left;
+    margin-bottom: 5px;
+}
+#imgContain img{
+    width: 100px;
+    height: 40px;
+}
+#imgContain span{
+    position: absolute;
+    top: 43%;
+    left: 120px;
+    font-size: 0.9em;
+    color: white;
+}
